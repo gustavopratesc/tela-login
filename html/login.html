@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../estilos/mediaqueries.css">
-    <title>Login</title>
 </head>
 <body>
     <main>
@@ -17,7 +17,24 @@
                 <h1>Login</h1>
                 <p>Seja Bem-vindo(a). Insira seus dados para acessar sua conta.</p>
                 <form action="login.php" method="post">
-
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            <img src="../image/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="userusuario">
+                            </span>
+                        <input type="email" name="login" id="ilogin" required placeholder="E-mail" autocomplete="email" maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            <img src="../image/lock_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="senhacadeado">
+                            </span>
+                        <input type="password" name="senha" id="isenha" required placeholder="Senha" autocomplete="current-password" minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botão">
+                        Esqueci a senha <img id="iconemail" src="../image/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="email">
+                    </a>
                 </form>
             </div>
         </section>
